@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-red-100">
+        <div class="w-3/4 mx-auto mt-10">
+            <h1 class="my-16 text-5xl pt-10 text-center ">Let's get some Money!!! </h1>
+            <div class="grid grid-cols-3 gap-10 mb-10">
+                <div class="rounded-xl bg-orange-300 pl-10 py-10">
+                    <h1 class="text-3xl mb-6">Deposit</h1>
+                    <p class="text-4xl">$ <span id="deposit-field">00</span></p>
+                </div>
+                <div class="rounded-xl bg-lime-400 pl-10 py-10">
+                    <h1 class="text-3xl mb-6">Withdraw</h1>
+                    <p class="text-4xl">$ <span id="withdraw-field">00</span></p>
+                </div>
+                <div class="rounded-xl bg-pink-400 pl-10 py-10">
+                    <h1 class="text-3xl mb-6">Balance</h1>
+                    <p class="text-4xl">$ <span id="balance-field">1500</span></p>
+                </div>
+            </div>
+        </div>
+        <!--Deposit Part  -->
+        <div class="w-3/4 m-auto grid grid-cols-2 gap-6">
+            <div class="bg-emerald-300 rounded-xl py-20 pl-20">
+                <h1 class="mb-4 text-3xl">Plaase Deposit</h1>
+                <input id="new-deposit-field" class="block mb-2 w-3/5 h-10 rounded-lg ml-10 pl-2" type="text" placeholder="Enter your deposit amount">
+                <button id="deposit-btn"
+                    class="ml-10 border-2 border-rose-500 rounded-lg py-2 px-4 bg-orange-700 text-white">DEPOSIT</button>
+
+            </div>
+            <div class="bg-cyan-400 rounded-xl pl-20 py-20">
+                <h1 class="block mb-4 text-3xl">Plaase Withdraw</h1>
+                <input id="new-withdraw-field" class="block mb-2 w-3/5 h-10 rounded-lg ml-10 pl-2" type="text" placeholder="Enter your deposit amount">
+                <button id="withdraw-btn" class="ml-10 border-2 border-rose-500 rounded-lg py-2 px-4 bg-orange-700 text-white uppercase">Withdraw</button>
+
+            </div>
+        </div>
+        <script src="deposit.js"></script>
+
+    </body>
+</html>
